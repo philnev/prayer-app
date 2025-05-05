@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +7,12 @@
   <title>Breathe</title>
   <style>
     body { font-family: sans-serif; margin: 0; background: #f5f5f5; color: #333; }
-    header { background: #4267b2; color: white; padding: 1em; text-align: center; }
+    header { background: #4267b2; color: white; padding: 1em; text-align: center; position: relative; }
+    header h1 { margin: 0 0 0.5em 0; }
+    nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 1em; margin-top: 0.5em; }
+    .tab-button { padding: 0.5em 1em; cursor: pointer; border: none; background: white; color: #4267b2; font-weight: bold; border-radius: 4px; }
+    .tab-button.active { background: #e0e0e0; }
     main { max-width: 800px; margin: auto; padding: 1em; }
-    nav { display: flex; justify-content: center; background: #e0e0e0; }
-    .tab-button { padding: 1em; cursor: pointer; border: none; background: none; font-weight: bold; color: #333; }
-    .tab-button.active { color: #4267b2; border-bottom: 3px solid #4267b2; }
     .tab-content { display: none; background: white; padding: 1em; margin-top: 1em; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
     .tab-content.active { display: block; }
     h2, h3 { color: #4267b2; }
@@ -24,56 +26,58 @@
 <body>
   <header>
     <h1>Breathe: a place to let go for a moment and hold on to God</h1>
+    <nav>
+      <button class="tab-button active" onclick="showTab('home')">Home</button>
+      <button class="tab-button" onclick="showTab('courses')">Courses</button>
+      <button class="tab-button" onclick="showTab('exercises')">Exercises</button>
+      <button class="tab-button" onclick="showTab('prayers')">Prayers</button>
+    </nav>
   </header>
 
   <main>
-    <section>
-      <h2>A Moment of Release</h2>
-      <p>A time where we can put things down for a moment<br>
-      Where we can breathe for a moment<br>
-      Where we can lay aside the expectations of others for a moment<br>
-      Where we can lay aside our responsibility for others for a moment<br>
-      Where we are not being judged or assessed<br>
-      Putting down the things we carry – might be tangible or intangible</p>
-    </section>
+    <div id="home" class="tab-content active">
+      <section>
+        <h2>A Moment of Release</h2>
+        <p>A time where we can put things down for a moment<br>
+        Where we can breathe for a moment<br>
+        Where we can lay aside the expectations of others for a moment<br>
+        Where we can lay aside our responsibility for others for a moment<br>
+        Where we are not being judged or assessed<br>
+        Putting down the things we carry – might be tangible or intangible</p>
+      </section>
 
-    <section>
-      <h2>Opening Meditative Song</h2>
-      <iframe height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ" allowfullscreen></iframe>
-    </section>
+      <section>
+        <h2>Opening Meditative Song</h2>
+        <iframe height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ" allowfullscreen></iframe>
+      </section>
 
-    <section>
-      <h2>Prayer for the Week</h2>
-      <p>Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.</p>
-    </section>
+      <section>
+        <h2>Prayer for the Week</h2>
+        <p>Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.</p>
+      </section>
 
-    <section>
-      <h2>Spiritual Exercise</h2>
-      <p>This week, pause each morning to take three deep breaths. As you breathe in, say quietly: "Here I am." As you breathe out: "With you, God." Let this rhythm anchor your day in awareness of God's presence.</p>
-    </section>
+      <section>
+        <h2>Spiritual Exercise</h2>
+        <p>This week, pause each morning to take three deep breaths. As you breathe in, say quietly: "Here I am." As you breathe out: "With you, God." Let this rhythm anchor your day in awareness of God's presence.</p>
+      </section>
 
-    <section>
-      <h2>St Aidan Prayer</h2>
-      <div class="st-aidan">
-        <img src="saint-aiden-lindisfarne.webp" alt="Statue of St Aidan">
-        <p>Leave me alone with God as much as may be.<br>
-        As the tide draws the waters close in upon the shore,<br>
-        Make me an island, set apart,<br>
-        alone with you, God, holy to you.<br>
-        Then with the turning of the tide<br>
-        prepare me to carry your presence to the busy world beyond,<br>
-        the world that rushes in on me<br>
-        till the waters come again and fold me back to you.</p>
-      </div>
-    </section>
+      <section>
+        <h2>St Aidan Prayer</h2>
+        <div class="st-aidan">
+          <img src="saint-aiden-lindisfarne.webp" alt="Statue of St Aidan">
+          <p>Leave me alone with God as much as may be.<br>
+          As the tide draws the waters close in upon the shore,<br>
+          Make me an island, set apart,<br>
+          alone with you, God, holy to you.<br>
+          Then with the turning of the tide<br>
+          prepare me to carry your presence to the busy world beyond,<br>
+          the world that rushes in on me<br>
+          till the waters come again and fold me back to you.</p>
+        </div>
+      </section>
+    </div>
 
-    <nav>
-      <button class="tab-button active" onclick="showTab('courses')">Courses</button>
-      <button class="tab-button" onclick="showTab('exercises')">Archive of Weekly Exercises</button>
-      <button class="tab-button" onclick="showTab('prayers')">Archive of Weekly Prayers</button>
-    </nav>
-
-    <div id="courses" class="tab-content active">
+    <div id="courses" class="tab-content">
       <section>
         <h2>The Prayer Course</h2>
         <p>Explore eight sessions on different aspects of prayer. Each session includes a video to watch in your own time.</p>
