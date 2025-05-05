@@ -22,6 +22,7 @@
     .st-aidan p { margin: 0; }
     textarea { width: 100%; height: 150px; margin-top: 1em; border-radius: 4px; padding: 0.5em; font-family: inherit; }
     .button-clear { margin-top: 1em; background: #d9534f; color: white; padding: 0.5em 1em; border: none; border-radius: 4px; cursor: pointer; }
+    .bookmark { float: right; cursor: pointer; font-size: 0.9em; background: #f0f0f0; padding: 0.3em 0.6em; border-radius: 4px; color: #333; }
   </style>
 </head>
 <body>
@@ -33,6 +34,7 @@
       <button class="tab-button" onclick="showTab('exercises')">Exercises</button>
       <button class="tab-button" onclick="showTab('prayers')">Prayers</button>
       <button class="tab-button" onclick="showTab('notes')">My Notes</button>
+      <button class="tab-button" onclick="showTab('saved')">My Saved Moments</button>
     </nav>
   </header>
 
@@ -54,12 +56,12 @@
       </section>
 
       <section>
-        <h2>Prayer for the Week</h2>
+        <h2>Prayer for the Week <span class="bookmark" onclick="saveMoment('Prayer for the Week', this.parentElement.innerHTML)">⭐ Save</span></h2>
         <p>Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.</p>
       </section>
 
       <section>
-        <h2>Spiritual Exercise</h2>
+        <h2>Spiritual Exercise <span class="bookmark" onclick="saveMoment('Spiritual Exercise', this.parentElement.innerHTML)">⭐ Save</span></h2>
         <p>This week, pause each morning to take three deep breaths. As you breathe in, say quietly: "Here I am." As you breathe out: "With you, God." Let this rhythm anchor your day in awareness of God's presence.</p>
       </section>
 
@@ -134,6 +136,14 @@
         <button class="button-clear" onclick="clearNotes()">Clear Notes</button>
       </section>
     </div>
+
+    <div id="saved" class="tab-content">
+      <section>
+        <h2>My Saved Moments</h2>
+        <div id="savedContent"><em>No moments saved yet.</em></div>
+        <button class="button-clear" onclick="clearSavedMoments()">Clear Saved Moments</button>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -150,10 +160,26 @@
       event.currentTarget.classList.add('active');
     }
 
-    document.getElementById('notesArea').value = localStorage.getItem('spiritualNotes') || '';
-    document.getElementById('notesArea').addEventListener('input', e => {
-      localStorage.setItem('spiritualNotes', e.target.value);
-    });
+    function saveMoment(title, content) {
+      let saved = JSON.parse(localStorage.getItem('savedMoments') || '[]');
+      saved.push({ title, content });
+      localStorage.setItem('savedMoments', JSON.stringify(saved));
+      alert('Saved to My Moments');
+      loadSavedMoments();
+    }
+
+    function loadSavedMoments() {
+      const container = document.getElementById('savedContent');
+      const saved = JSON.parse(localStorage.getItem('savedMoments') || '[]');
+      container.innerHTML = saved.length === 0 ? '<em>No moments saved yet.</em>' : saved.map(m => `<h3>${m.title}</h3>${m.content}`).join('<hr>');
+    }
+
+    function clearSavedMoments() {
+      if (confirm('Are you sure you want to clear all saved moments?')) {
+        localStorage.removeItem('savedMoments');
+        loadSavedMoments();
+      }
+    }
 
     function clearNotes() {
       if (confirm('Are you sure you want to clear your notes?')) {
@@ -161,6 +187,13 @@
         document.getElementById('notesArea').value = '';
       }
     }
+
+    document.getElementById('notesArea').value = localStorage.getItem('spiritualNotes') || '';
+    document.getElementById('notesArea').addEventListener('input', e => {
+      localStorage.setItem('spiritualNotes', e.target.value);
+    });
+
+    window.onload = loadSavedMoments;
   </script>
 </body>
 </html>
