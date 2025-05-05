@@ -1,173 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Breathe</title>
-  <style>
-    body { font-family: sans-serif; margin: 0; background: #f5f5f5; color: #333; }
-    header { background: #4267b2; color: white; padding: 1em; text-align: center; position: relative; }
-    header h1 { margin: 0 0 0.5em 0; }
-    nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 1em; padding: 0.5em; background: #e0e0e0; position: sticky; top: 0; z-index: 1000; }
-    .tab-button { padding: 0.5em 1em; cursor: pointer; border: none; background: white; color: #4267b2; font-weight: bold; border-radius: 4px; }
-    .tab-button.active { background: #d0d0d0; }
-    main { max-width: 800px; margin: auto; padding: 1em; }
-    .tab-content { display: none; background: white; padding: 1em; margin-top: 1em; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .tab-content.active { display: block; }
-    h2, h3 { color: #4267b2; }
-    iframe { width: 100%; border: none; border-radius: 8px; margin-top: 0.5em; }
-    footer { text-align: center; font-size: 0.9em; color: #777; margin: 2em auto 1em; padding: 1em; max-width: 800px; }
-    .st-aidan { display: flex; gap: 1em; align-items: flex-start; flex-wrap: wrap; }
-    .st-aidan img { max-width: 250px; border-radius: 8px; }
-    .st-aidan p { margin: 0; }
-  </style>
-</head>
+<html>
 <body>
-  <header>
-    <h1>Breathe: a place to let go for a moment and hold on to God</h1>
-  </header>
+<!-- START OF CURRENT READING -->
+<section>
+      <h2>Reading for the Week</h2>
+      <h3>Matthew 18-20 (The Message)</h3>
+      <p>This week’s passage from Matthew 18-20 in The Message translation reveals the heart of the gospel story: teaching on discipleship.</p>
+      <p><strong>Reflection:</strong> Teaching on discipleship invites us to consider how Jesus' actions and words shaped the lives of those around him. His presence disrupts, heals, and reveals. When we engage with these scriptures, we’re not just reading history, we’re allowing our own lives to be questioned and formed.</p>
+      <p><em>How does this week's reading—teaching on discipleship—challenge or comfort you in your current season of life?</em></p>
+    </section>
+<!-- END OF CURRENT READING -->
 
-  <nav>
-    <button class="tab-button active" onclick="showTab('home')">Home</button>
-    <button class="tab-button" onclick="showTab('courses')">Courses</button>
-    <button class="tab-button" onclick="showTab('exercises')">Exercises</button>
-    <button class="tab-button" onclick="showTab('prayers')">Prayers</button>
-    <button class="tab-button" onclick="showTab('readings')">Weekly Readings</button>
-    <button class="tab-button" onclick="showTab('pennine')">Pennine Way</button>
-  </nav>
-
-  <main>
-    <div id="home" class="tab-content active">
-      <section>
-        <h2>A Moment of Release</h2>
-        <p>A time where we can put things down for a moment<br>
-        Where we can breathe for a moment<br>
-        Where we can lay aside the expectations of others for a moment<br>
-        Where we can lay aside our responsibility for others for a moment<br>
-        Where we are not being judged or assessed<br>
-        Putting down the things we carry – might be tangible or intangible</p>
-      </section>
-
-      <section>
-        <h2>Opening Meditative Song</h2>
-        <iframe height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ" allowfullscreen></iframe>
-      </section>
-
-      <section>
-        <h2>Prayer for the Week</h2>
-        <p>Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.</p>
-      </section>
-
-      <section>
-        <h2>Reading for the Week</h2>
-        <h3>Matthew 11:28–30 (The Message)</h3>
-        <p>"Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."</p>
-        <p><strong>Reflection:</strong> Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus offers something far more restorative than sleep: a whole new way of living. The invitation is not to do more or try harder, but to walk closely with him and let go of burdens we weren’t meant to carry. The rhythm of grace is gentle, spacious, and freeing—if we’re willing to walk to its beat.</p>
-        <p><em>What burden might you put down this week, and how might you let grace reshape your pace?</em></p>
-      </section>
-
-      <section>
-        <h2>Spiritual Exercise</h2>
-        <p>This week, pause each morning to take three deep breaths. As you breathe in, say quietly: "Here I am." As you breathe out: "With you, God." Let this rhythm anchor your day in awareness of God's presence.</p>
-      </section>
-
-      <section>
-        <h2>St Aidan Prayer</h2>
-        <div class="st-aidan">
-          <img src="saint-aiden-lindisfarne.webp" alt="Statue of St Aidan">
-          <p>Leave me alone with God as much as may be.<br>
-          As the tide draws the waters close in upon the shore,<br>
-          Make me an island, set apart,<br>
-          alone with you, God, holy to you.<br>
-          Then with the turning of the tide<br>
-          prepare me to carry your presence to the busy world beyond,<br>
-          the world that rushes in on me<br>
-          till the waters come again and fold me back to you.</p>
-        </div>
-      </section>
-    </div>
-
-    <div id="courses" class="tab-content">
-      <section>
-        <h2>The Prayer Course</h2>
-        <p>Explore eight sessions on different aspects of prayer. Each session includes a video to watch in your own time.</p>
-        <h3>Session 1: Why Pray?</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/1aHA1yj8E2g" allowfullscreen></iframe>
-        <h3>Session 2: Adoration</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/boklkec7NLE" allowfullscreen></iframe>
-        <h3>Session 3: Petition</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/qSRIuPF32jQ" allowfullscreen></iframe>
-        <h3>Session 4: Intercession</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/GuU2cZ5uCfA" allowfullscreen></iframe>
-        <h3>Session 5: Unanswered Prayer</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/QjrZ6wCS2eM" allowfullscreen></iframe>
-        <h3>Session 6: Contemplation</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/9ckvmhz_6FQ" allowfullscreen></iframe>
-        <h3>Session 7: Listening</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/1aHA1yj8E2g" allowfullscreen></iframe>
-        <h3>Session 8: Spiritual Warfare</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/56cBISAcTk8" allowfullscreen></iframe>
-      </section>
-    </div>
-
-    <div id="exercises" class="tab-content">
-      <section>
-        <h2>Archive of Weekly Spiritual Exercises</h2>
-        <ul>
-          <li><strong>Week 1:</strong> Take a short walk and name things you're thankful for.</li>
-          <li><strong>Week 2:</strong> Pause three times a day to say: "Here I am. With you, God."</li>
-          <li><strong>Week 3:</strong> Write a prayer of thanks before bed each night.</li>
-          <li><strong>Week 4:</strong> Light a candle and sit in silence for 5 minutes each day.</li>
-        </ul>
-      </section>
-    </div>
-
-    <div id="prayers" class="tab-content">
-      <section>
-        <h2>Archive of Weekly Prayers</h2>
-        <ul>
-          <li><strong>Week 1:</strong> God of peace, calm our racing thoughts and hold us in your care.</li>
-          <li><strong>Week 2:</strong> Creator God, thank you for the beauty around us. Help us notice it today.</li>
-          <li><strong>Week 3:</strong> Jesus, walk with us in our joys and our doubts. Stay near.</li>
-          <li><strong>Week 4:</strong> Spirit of life, breathe hope and courage into our tired hearts.</li>
-        </ul>
-      </section>
-    </div>
-
-    <div id="readings" class="tab-content">
-      <section>
-        <h2>Archive of Weekly Readings</h2>
-        <h3>Matthew 11:28–30 (The Message)</h3>
-        <p>"Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."</p>
-        <p><strong>Reflection:</strong> Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus offers something far more restorative than sleep: a whole new way of living. The invitation is not to do more or try harder, but to walk closely with him and let go of burdens we weren’t meant to carry. The rhythm of grace is gentle, spacious, and freeing—if we’re willing to walk to its beat.</p>
-        <p><em>What burden might you put down this week, and how might you let grace reshape your pace?</em></p>
-      </section>
-    </div>
-
-    <div id="pennine" class="tab-content">
-      <section>
-        <h2>Pennine Way</h2>
-        <p>Content coming soon...</p>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 Sawston Free Church | Built with grace and simplicity
-  </footer>
-
-  <script>
-    function showTab(tabId) {
-      const contents = document.querySelectorAll('.tab-content');
-      const buttons = document.querySelectorAll('.tab-button');
-
-      contents.forEach(content => content.classList.remove('active'));
-      buttons.forEach(btn => btn.classList.remove('active'));
-
-      document.getElementById(tabId).classList.add('active');
-      event.currentTarget.classList.add('active');
-    }
-  </script>
+<!-- START OF CURRENT READING -->
+<section>
+  <h2>Reading for the Week</h2>
+  <p>Placeholder text</p>
+</section>
+<!-- END OF CURRENT READING -->
+<!-- START OF READING ARCHIVE -->
 </body>
 </html>
-
