@@ -20,9 +20,6 @@
     .st-aidan { display: flex; gap: 1em; align-items: flex-start; flex-wrap: wrap; }
     .st-aidan img { max-width: 250px; border-radius: 8px; }
     .st-aidan p { margin: 0; }
-    .bookmark { float: right; cursor: pointer; font-size: 0.9em; background: #f0f0f0; padding: 0.3em 0.6em; border-radius: 4px; color: #333; }
-    textarea { width: 100%; height: 150px; margin-top: 1em; border-radius: 4px; padding: 0.5em; font-family: inherit; }
-    .button-clear { margin-top: 1em; background: #d9534f; color: white; padding: 0.5em 1em; border: none; border-radius: 4px; cursor: pointer; }
   </style>
 </head>
 <body>
@@ -35,39 +32,97 @@
     <button class="tab-button" onclick="showTab('courses')">Courses</button>
     <button class="tab-button" onclick="showTab('exercises')">Exercises</button>
     <button class="tab-button" onclick="showTab('prayers')">Prayers</button>
-    <button class="tab-button" onclick="showTab('readings')">Weekly Readings</button>
-    <button class="tab-button" onclick="showTab('saved')">My Saved Moments</button>
-    <button class="tab-button" onclick="showTab('notes')">My Notes</button>
-    <button class="tab-button" onclick="showTab('pennine')">Pennine Way</button>
   </nav>
 
   <main>
     <div id="home" class="tab-content active">
-      <!-- Home content remains unchanged -->
-    </div>
-
-    <div id="saved" class="tab-content">
       <section>
-        <h2>My Saved Moments</h2>
-        <div id="savedContent"><em>No moments saved yet.</em></div>
-        <button class="button-clear" onclick="clearSavedMoments()">Clear Saved Moments</button>
+        <h2>A Moment of Release</h2>
+        <p>A time where we can put things down for a moment<br>
+        Where we can breathe for a moment<br>
+        Where we can lay aside the expectations of others for a moment<br>
+        Where we can lay aside our responsibility for others for a moment<br>
+        Where we are not being judged or assessed<br>
+        Putting down the things we carry – might be tangible or intangible</p>
+      </section>
+
+      <section>
+        <h2>Opening Meditative Song</h2>
+        <iframe height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2>Prayer for the Week</h2>
+        <p>Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.</p>
+      </section>
+
+      <section>
+        <h2>Spiritual Exercise</h2>
+        <p>This week, pause each morning to take three deep breaths. As you breathe in, say quietly: "Here I am." As you breathe out: "With you, God." Let this rhythm anchor your day in awareness of God's presence.</p>
+      </section>
+
+      <section>
+        <h2>St Aidan Prayer</h2>
+        <div class="st-aidan">
+          <img src="saint-aiden-lindisfarne.webp" alt="Statue of St Aidan">
+          <p>Leave me alone with God as much as may be.<br>
+          As the tide draws the waters close in upon the shore,<br>
+          Make me an island, set apart,<br>
+          alone with you, God, holy to you.<br>
+          Then with the turning of the tide<br>
+          prepare me to carry your presence to the busy world beyond,<br>
+          the world that rushes in on me<br>
+          till the waters come again and fold me back to you.</p>
+        </div>
       </section>
     </div>
 
-    <div id="notes" class="tab-content">
+    <div id="courses" class="tab-content">
       <section>
-        <h2>My Spiritual Notes</h2>
-        <p>Write freely. Your notes are saved only in your browser and never leave your device.</p>
-        <textarea id="notesArea" placeholder="What are you noticing this week? What are you praying for?"></textarea>
-        <button class="button-clear" onclick="clearNotes()">Clear Notes</button>
+        <h2>The Prayer Course</h2>
+        <p>Explore eight sessions on different aspects of prayer. Each session includes a video to watch in your own time.</p>
+        <h3>Session 1: Why Pray?</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/1aHA1yj8E2g" allowfullscreen></iframe>
+        <h3>Session 2: Adoration</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/boklkec7NLE" allowfullscreen></iframe>
+        <h3>Session 3: Petition</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/qSRIuPF32jQ" allowfullscreen></iframe>
+        <h3>Session 4: Intercession</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/GuU2cZ5uCfA" allowfullscreen></iframe>
+        <h3>Session 5: Unanswered Prayer</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/QjrZ6wCS2eM" allowfullscreen></iframe>
+        <h3>Session 6: Contemplation</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/9ckvmhz_6FQ" allowfullscreen></iframe>
+        <h3>Session 7: Listening</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/1aHA1yj8E2g" allowfullscreen></iframe>
+        <h3>Session 8: Spiritual Warfare</h3>
+        <iframe height="315" src="https://www.youtube.com/embed/56cBISAcTk8" allowfullscreen></iframe>
       </section>
     </div>
 
-    <div id="courses" class="tab-content"><section><h2>The Prayer Course</h2></section></div>
-    <div id="exercises" class="tab-content"><section><h2>Archive of Weekly Spiritual Exercises</h2></section></div>
-    <div id="prayers" class="tab-content"><section><h2>Archive of Weekly Prayers</h2></section></div>
-    <div id="readings" class="tab-content"><section><h2>Archive of Weekly Readings</h2></section></div>
-    <div id="pennine" class="tab-content"><section><h2>Pennine Way</h2><p>Content coming soon...</p></section></div>
+    <div id="exercises" class="tab-content">
+      <section>
+        <h2>Archive of Weekly Spiritual Exercises</h2>
+        <ul>
+          <li><strong>Week 1:</strong> Take a short walk and name things you're thankful for.</li>
+          <li><strong>Week 2:</strong> Pause three times a day to say: "Here I am. With you, God."</li>
+          <li><strong>Week 3:</strong> Write a prayer of thanks before bed each night.</li>
+          <li><strong>Week 4:</strong> Light a candle and sit in silence for 5 minutes each day.</li>
+        </ul>
+      </section>
+    </div>
+
+    <div id="prayers" class="tab-content">
+      <section>
+        <h2>Archive of Weekly Prayers</h2>
+        <ul>
+          <li><strong>Week 1:</strong> God of peace, calm our racing thoughts and hold us in your care.</li>
+          <li><strong>Week 2:</strong> Creator God, thank you for the beauty around us. Help us notice it today.</li>
+          <li><strong>Week 3:</strong> Jesus, walk with us in our joys and our doubts. Stay near.</li>
+          <li><strong>Week 4:</strong> Spirit of life, breathe hope and courage into our tired hearts.</li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer>
@@ -78,47 +133,15 @@
     function showTab(tabId) {
       const contents = document.querySelectorAll('.tab-content');
       const buttons = document.querySelectorAll('.tab-button');
+
       contents.forEach(content => content.classList.remove('active'));
       buttons.forEach(btn => btn.classList.remove('active'));
+
       document.getElementById(tabId).classList.add('active');
       event.currentTarget.classList.add('active');
     }
-
-    function saveMoment(title, content) {
-      let saved = JSON.parse(localStorage.getItem('savedMoments') || '[]');
-      saved.push({ title, content });
-      localStorage.setItem('savedMoments', JSON.stringify(saved));
-      alert('Saved to My Moments');
-      loadSavedMoments();
-    }
-
-    function loadSavedMoments() {
-      const container = document.getElementById('savedContent');
-      const saved = JSON.parse(localStorage.getItem('savedMoments') || '[]');
-      container.innerHTML = saved.length === 0 ? '<em>No moments saved yet.</em>' : saved.map(m => `<h3>${m.title}</h3>${m.content}`).join('<hr>');
-    }
-
-    function clearSavedMoments() {
-      if (confirm('Are you sure you want to clear all saved moments?')) {
-        localStorage.removeItem('savedMoments');
-        loadSavedMoments();
-      }
-    }
-
-    function clearNotes() {
-      if (confirm('Are you sure you want to clear your notes?')) {
-        localStorage.removeItem('spiritualNotes');
-        document.getElementById('notesArea').value = '';
-      }
-    }
-
-    document.getElementById('notesArea').value = localStorage.getItem('spiritualNotes') || '';
-    document.getElementById('notesArea').addEventListener('input', e => {
-      localStorage.setItem('spiritualNotes', e.target.value);
-    });
-
-    window.onload = loadSavedMoments;
   </script>
 </body>
 </html>
+
 
