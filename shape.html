@@ -3,255 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SHAPE Course - Full</title>
+  <title>SHAPE Course</title>
   <style>
-    body { font-family: sans-serif; line-height: 1.6; padding: 10px; margin: auto; }
-    h1, h2, h3 { color: #333; }
-    label { display: block; margin-top: 10px; font-size: 1rem; }
-    textarea, input[type='number'], input[type='text'], select {
-      width: 100%;
-      padding: 0.5em;
-      font-size: 1rem;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      margin-top: 0.25em;
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
     }
-    textarea { min-height: 100px; }
-    .tab-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5em;
-      margin-bottom: 1em;
+    h1 {
+      color: #4a90e2;
     }
-    .tab-buttons button {
-      flex: 1 1 auto;
-      min-width: 140px;
-      padding: 12px;
-      cursor: pointer;
-      border: none;
-      color: white;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #4a90e2;
       font-weight: bold;
-      border-radius: 4px;
-      font-size: 1rem;
     }
-    .tab-buttons button:nth-child(1) { background: #4a90e2; }
-    .tab-buttons button:nth-child(2) { background: #7ed957; }
-    .tab-buttons button:nth-child(3) { background: #f5a623; }
-    .tab-buttons button:nth-child(4) { background: #bd10e0; }
-    .tab-buttons button:nth-child(5) { background: #50e3c2; }
-     flex: 1 1 auto; }
-    .tab-content { display: none; }
-    .tab-content.active { display: block; }
-    section { margin-bottom: 2em; }
-    @media (max-width: 600px) {
-      .tab-buttons button { font-size: 0.9rem; padding: 10px; }
-      label, textarea, input { font-size: 1rem; }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>SHAPE Course - Full Online Course</h1>
-  <p>Welcome to the SHAPE course. Over six chapters, you'll reflect on your unique calling by exploring your Spiritual Gifts, Heart, Abilities, Personality, Experience, and Next Steps.</p>
-
-  <div class="tab-buttons">
-    <button onclick="showTab('ch1')">Chapter 1: Spiritual Gifts</button>
-    <button onclick="showTab('ch2')">Chapter 2: Heart</button>
-    <button onclick="showTab('ch3')">Chapter 3: Abilities</button>
-    <button onclick="showTab('ch4')">Chapter 4: Personality</button>
-    <button onclick="showTab('ch5')">Chapter 5: Experience</button>
-    <button onclick="showTab('ch6')">Chapter 6: Next Steps</button>
-  </div>
-
-  <div id="ch1" class="tab-content active">
-  <h2>Chapter 1: Spiritual Gifts</h2>
-  <p>Every Christian is given spiritual gifts—unique capacities empowered by the Holy Spirit to build up others, glorify God, and express love in action. In this session, we’ll explore what your gifts might be.</p>
-  <h3>Reflective Reading</h3>
-  <blockquote>
-    “Now to each one the manifestation of the Spirit is given for the common good.” — 1 Corinthians 12:7
-  </blockquote>
-  <blockquote>
-    “Each of you should use whatever gift you have received to serve others.” — 1 Peter 4:10
-  </blockquote>
-  <h3>Guided Assessment</h3>
-  <p>Rate how true each statement is for you using the scale: 0 = Not true at all, 1 = Occasionally true, 2 = Often true, 3 = Very true.</p>
-  <p>[Interactive gift assessment will appear here using embedded JavaScript in the full version.]</p>
-  <h3>Reflection Journal</h3>
-  <label>Which statements most stood out to you? Why?<br><textarea></textarea></label>
-  <label>Can you think of a time when you used a spiritual gift to bless someone else?<br><textarea></textarea></label>
-  <label>What are you curious to explore more about yourself?<br><textarea></textarea></label>
-  <h3>Closing Prayer</h3>
-  <blockquote>
-    God of grace,<br>
-    Thank you for the gifts you’ve planted in me,<br>
-    and for the ways your Spirit works through my life.<br>
-    Help me to use these gifts not for my glory,<br>
-    but to serve others, build up your Church,<br>
-    and reflect your love in the world.<br>
-    Amen.
-  </blockquote>
-</div>
-<div id="ch2" class="tab-content">
-  <h2>Chapter 2: Heart</h2>
-  <p>In this session we’re exploring your <strong>heart</strong> — the passions and causes that stir you. God doesn’t just use your skills; He also uses what you love.</p>
-  <h3>Reflection Questions</h3>
-  <label>I love to:<br><textarea></textarea></label>
-  <label>I love to:<br><textarea></textarea></label>
-  <label>I love to:<br><textarea></textarea></label>
-  <label>Who do you love to work with?<br><textarea></textarea></label>
-  <label>What church ministries or causes excite you most?<br><textarea></textarea></label>
-  <label>Is there a mission or ministry that keeps coming to your mind?<br><textarea></textarea></label>
-  <h3>Heart Check</h3>
-  <p>Select any areas that resonate with you:</p>
-  <label><input type="checkbox"> Youth & Children</label>
-  <label><input type="checkbox"> Worship & Music</label>
-  <label><input type="checkbox"> Pastoral Care</label>
-  <label><input type="checkbox"> Hospitality & Welcome</label>
-  <label><input type="checkbox"> Outreach & Evangelism</label>
-  <label><input type="checkbox"> Justice & Equality</label>
-  <label><input type="checkbox"> Prayer Ministry</label>
-  <label><input type="checkbox"> Administration & Organisation</label>
-  <label><input type="checkbox"> Practical Help / Repairs / DIY</label>
-  <label><input type="checkbox"> Teaching & Bible Study</label>
-  <label><input type="checkbox"> Technology & Media</label>
-  <label><input type="checkbox"> Other: <input type="text"></label>
-  <h3>Closing Prayer</h3>
-  <blockquote>
-    God of compassion,<br>
-    Thank you for giving me a heart that feels,<br>
-    passions that stir, and longings that drive me.<br>
-    Help me to listen well to those desires,<br>
-    and to see how they might reflect your calling.<br>
-    May what I love become part of how I serve.<br>
-    Amen.
-  </blockquote>
-</div>
-<div id="ch3" class="tab-content">
-  <h2>Chapter 3: Abilities</h2>
-  <p>God has given each of us different abilities — practical, creative, professional, or technical — that can be used in service of others. You don’t need to be the best at something to be useful in God's hands.</p>
-  <h3>Reflection Prompts</h3>
-  <label>What are you good at that others often affirm in you?<br><textarea></textarea></label>
-  <label>What activities do you enjoy doing, even if they don’t feel “spiritual”?<br><textarea></textarea></label>
-  <label>Where have you gained skills — through work, hobbies, family, or volunteering?<br><textarea></textarea></label>
-  <h3>Ability Check</h3>
-  <p>Select any abilities you feel you have or want to use in service:</p>
-  <label><input type="checkbox"> Cooking or catering</label>
-  <label><input type="checkbox"> Gardening or outdoor work</label>
-  <label><input type="checkbox"> DIY, fixing or making things</label>
-  <label><input type="checkbox"> Organising events or people</label>
-  <label><input type="checkbox"> Budgeting or accounting</label>
-  <label><input type="checkbox"> Computer/tech skills</label>
-  <label><input type="checkbox"> Graphic design / creativity</label>
-  <label><input type="checkbox"> Writing or editing</label>
-  <label><input type="checkbox"> Musical instrument or singing</label>
-  <label><input type="checkbox"> Public speaking or presenting</label>
-  <label><input type="checkbox"> Teaching or training</label>
-  <label><input type="checkbox"> Caring or nursing skills</label>
-  <label><input type="checkbox"> Sports, games or physical activity</label>
-  <label><input type="checkbox"> Foreign languages</label>
-  <label><input type="checkbox"> Driving or transport help</label>
-  <label><input type="checkbox"> Other: <input type="text"></label>
-  <h3>Closing Prayer</h3>
-  <blockquote>
-    Generous God,<br>
-    Thank you for the practical gifts and skills you have given me.<br>
-    Help me to recognise them as sacred and to use them in love.<br>
-    May nothing be wasted, but all offered for your purposes.<br>
-    Amen.
-  </blockquote>
-</div>
-<div id="ch4" class="tab-content">
-  <h2>Chapter 4: Personality</h2>
-  <p>God made you with a unique personality. It shapes how you relate to others, what energises you, and where you serve best. There is no right or wrong type—just understanding who you are and how you work best.</p>
-  <h3>Reflection Prompts</h3>
-  <label>How would your friends describe you in three words?<br><textarea></textarea></label>
-  <label>What gives you energy—quiet time alone or time with others?<br><textarea></textarea></label>
-  <label>In a group, do you prefer to lead, contribute ideas, or support others quietly?<br><textarea></textarea></label>
-  <h3>Self-Assessment Sliders</h3>
-  <p>Use the sliders to reflect on where you fall on these personality scales:</p>
-  <label>Introvert <input type="range" min="0" max="10"> Extrovert</label><br>
-  <label>Thinker <input type="range" min="0" max="10"> Feeler</label><br>
-  <label>Structured <input type="range" min="0" max="10"> Flexible</label><br>
-  <label>Big Picture <input type="range" min="0" max="10"> Detail-Oriented</label><br>
-  <h3>Closing Prayer</h3>
-  <blockquote>
-    Creator God,<br>
-    Thank you for shaping my personality with care.<br>
-    Help me to value the way I’m made,<br>
-    and find joy in serving you from my true self.<br>
-    May I celebrate the differences in others too,<br>
-    as together we reflect your image.<br>
-    Amen.
-  </blockquote>
-</div>
-<div id="ch5" class="tab-content">
-  <h2>Chapter 5: Experience</h2>
-  <p>Our life stories—both the joyful and the painful—form part of how God shapes us. This chapter helps you reflect on your spiritual journey and life experiences, to see how they might be used in God's work.</p>
-
-  <h3>Your Story</h3>
-  <label>How and when did you become a Christian?<br><textarea></textarea></label>
-  <label>What does your relationship with Jesus mean to you now?<br><textarea></textarea></label>
-
-  <h3>Meaningful Experiences</h3>
-  <label>Describe one or two spiritual moments that were especially meaningful or formative for you.<br><textarea></textarea></label>
-  <label>Is there a particular struggle or challenge in your life that God used to grow your faith?<br><textarea></textarea></label>
-  <label>What kinds of people or situations can you empathise with, based on your life experience?<br><textarea></textarea></label>
-
-  <h3>Education and Training</h3>
-  <label>What formal education or training have you had?<br><textarea></textarea></label>
-  <label>Have you completed any courses, certificates, or ministry training?<br><textarea></textarea></label>
-
-  <h3>Serving Background</h3>
-  <label>In what ways have you served others in churches or communities in the past?<br><textarea></textarea></label>
-
-  <h3>Closing Prayer</h3>
-  <blockquote>
-    Faithful God,<br>
-    Thank you for walking with me through every season of my life.<br>
-    Use my past, my story, my experiences—both joyful and painful—for good.<br>
-    Help me to trust that nothing is wasted in your hands,<br>
-    and that you can use all I’ve been through to bring hope and healing to others.<br>
-    Amen.
-  </blockquote>
-</div>
-<div id="ch6" class="tab-content">
-  <h2>Chapter 6: Next Steps</h2>
-  <p>Now that you’ve explored your SHAPE — your Spiritual Gifts, Heart, Abilities, Personality, and Experience — it’s time to bring it all together and consider how God might be inviting you to serve.</p>
-
-  <h3>Your SHAPE Summary</h3>
-  <label>What patterns or themes have you noticed throughout this course?<br><textarea></textarea></label>
-  <label>Which areas of SHAPE felt easiest to reflect on, and which felt harder?<br><textarea></textarea></label>
-  <label>How do your gifts and passions align with needs you see around you?<br><textarea></textarea></label>
-
-  <h3>Next Step Discernment</h3>
-  <label>What small next step could you take to explore serving in your SHAPE?<br><textarea></textarea></label>
-  <label>Who could you speak to for support, encouragement, or opportunities?<br><textarea></textarea></label>
-  <label>Is there a role in church, community, or life that feels like a fit for your SHAPE?<br><textarea></textarea></label>
-
-  <h3>Final Prayer</h3>
-  <blockquote>
-    Loving God,<br>
-    Thank you for the journey I’ve taken through this course.<br>
-    Help me to continue discovering, growing, and serving<br>
-    in the ways you’ve uniquely designed me.<br>
-    Show me where to go next, who to journey with,<br>
-    and how to use all I am to reflect your love in the world.<br>
-    Amen.
-  </blockquote>
-
-  <p><strong>Congratulations on completing the SHAPE course!</strong><br>
-  Take your time to revisit sections, pray over your responses, and talk with a trusted friend, mentor, or leader about your next steps.</p>
-</div>
-
-  <script>
-    function showTab(id) {
-      document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-      const target = document.getElementById(id);
-      if (target) {
-        target.classList.add('active');
-      } else {
-        console.error(`Tab with ID '${id}' not found.`);
-      }
-    }
-  </script>
+  <h1>Welcome to the SHAPE Course</h1>
+  <p>This 6-session course will help you discover how God has uniquely shaped you for service using your:</p>
+  <ul>
+    <li><a href="chapter1.html">Chapter 1: Spiritual Gifts</a></li>
+    <li><a href="chapter2.html">Chapter 2: Heart</a></li>
+    <li><a href="chapter3.html">Chapter 3: Abilities</a></li>
+    <li><a href="chapter4.html">Chapter 4: Personality</a></li>
+    <li><a href="chapter5.html">Chapter 5: Experience</a></li>
+    <li><a href="chapter6.html">Chapter 6: Next Steps</a></li>
+  </ul>
+  <p>Feel free to work through the chapters at your own pace, journaling as you go.</p>
 </body>
 </html>

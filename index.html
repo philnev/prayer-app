@@ -29,7 +29,48 @@
     <h1>Breathe: a place to let go for a moment and hold on to God</h1>
     <nav>
       <button class="tab-button active" onclick="showTab('home')">Home</button>
-      <button class="tab-button" onclick="showTab('courses')">Courses</button>
+      
+<div class="dropdown">
+  <button class="tab-button">Courses ▾</button>
+  <div class="dropdown-content">
+    <a href="#" onclick="showTab('courses')">Prayer Course</a>
+    <a href='chapter1.html' target='_blank'>SHAPE Course – Chapter 1</a>
+    <a href='chapter2.html' target='_blank'>SHAPE Course – Chapter 2</a>
+    <a href='chapter3.html' target='_blank'>SHAPE Course – Chapter 3</a>
+    <a href='chapter4.html' target='_blank'>SHAPE Course – Chapter 4</a>
+    <a href='chapter5.html' target='_blank'>SHAPE Course – Chapter 5</a>
+    <a href='chapter6.html' target='_blank'>SHAPE Course – Chapter 6</a>
+  </div>
+</div>
+
+<style>
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    color: #4267b2;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+  }
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+</style>
+
       <button class="tab-button" onclick="showTab('exercises')">Exercises</button>
       <button class="tab-button" onclick="showTab('prayers')">Prayers</button>
       <button class="tab-button" onclick="showTab('notes')">My Notes</button>
