@@ -15,34 +15,40 @@
     h1 {
       color: #4a90e2;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
     }
-    li {
-      margin-bottom: 10px;
-    }
-    a {
+    .tabs a {
+      flex: 1 1 auto;
+      padding: 10px;
+      text-align: center;
       text-decoration: none;
-      color: #4a90e2;
       font-weight: bold;
+      color: white;
+      border-radius: 5px;
     }
-    a:hover {
-      text-decoration: underline;
-    }
+    .tabs a:nth-child(1) { background-color: #4a90e2; }
+    .tabs a:nth-child(2) { background-color: #7ed957; }
+    .tabs a:nth-child(3) { background-color: #f5a623; }
+    .tabs a:nth-child(4) { background-color: #bd10e0; }
+    .tabs a:nth-child(5) { background-color: #50e3c2; }
+    .tabs a:nth-child(6) { background-color: #d0021b; }
   </style>
 </head>
 <body>
   <h1>Welcome to the SHAPE Course</h1>
   <p>This 6-session course will help you discover how God has uniquely shaped you for service using your:</p>
-  <ul>
-    <li><a href="chapter1.html">Chapter 1: Spiritual Gifts</a></li>
-    <li><a href="chapter2.html">Chapter 2: Heart</a></li>
-    <li><a href="chapter3.html">Chapter 3: Abilities</a></li>
-    <li><a href="chapter4.html">Chapter 4: Personality</a></li>
-    <li><a href="chapter5.html">Chapter 5: Experience</a></li>
-    <li><a href="chapter6.html">Chapter 6: Next Steps</a></li>
-  </ul>
-  <p>Feel free to work through the chapters at your own pace, journaling as you go.</p>
+  <div class="tabs">
+    <a href="chapter1.html">Chapter 1<br>Spiritual Gifts</a>
+    <a href="chapter2.html">Chapter 2<br>Heart</a>
+    <a href="chapter3.html">Chapter 3<br>Abilities</a>
+    <a href="chapter4.html">Chapter 4<br>Personality</a>
+    <a href="chapter5.html">Chapter 5<br>Experience</a>
+    <a href="chapter6.html">Chapter 6<br>Next Steps</a>
+  </div>
+  <p style="margin-top: 2em;">Work through the chapters at your own pace. Take time to reflect, pray, and make notes as you go.</p>
 </body>
 </html>

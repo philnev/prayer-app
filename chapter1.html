@@ -4,61 +4,271 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chapter 1: Spiritual Gifts</title>
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px; }
+    label { display: block; margin-top: 0.5em; }
+    textarea { width: 100%; min-height: 60px; margin-bottom: 1em; }
+    input[type='number'] { width: 60px; margin-left: 10px; }
+    section { margin-bottom: 2em; border-bottom: 1px solid #ccc; padding-bottom: 1em; }
+  </style>
 </head>
 <body>
+
+<div class="tabs">
+  <a href="chapter1.html" style="background-color: #4a90e2;">Chapter 1<br>Spiritual Gifts</a>
+  <a href="chapter2.html" style="background-color: #7ed957;">Chapter 2<br>Heart</a>
+  <a href="chapter3.html" style="background-color: #f5a623;">Chapter 3<br>Abilities</a>
+  <a href="chapter4.html" style="background-color: #bd10e0;">Chapter 4<br>Personality</a>
+  <a href="chapter5.html" style="background-color: #50e3c2;">Chapter 5<br>Experience</a>
+  <a href="chapter6.html" style="background-color: #d0021b;">Chapter 6<br>Next Steps</a>
+</div>
+<style>
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .tabs a {
+    flex: 1 1 auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+  }
+</style>
+
   <h1>Chapter 1: Spiritual Gifts</h1>
-  <p>This chapter includes a full assessment for 23 spiritual gifts with 6 statements each.</p>
-  <div id="assessment"></div>
-  
-<script>
-const gifts = [
-  { name: "Administration", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Apostleship", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Discernment", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Encouragement", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Evangelism", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Faith", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Giving", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Healing", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Helps", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Hospitality", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Intercession", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Interpretation of Tongues", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Knowledge", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Leadership", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Mercy", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Miraculous Powers", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Pastoring", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Prophecy", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Service", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Teaching", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Tongues", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Voluntary Poverty", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] },
-  { name: "Wisdom", statements: ["Statement 1", "Statement 2", "Statement 3", "Statement 4", "Statement 5", "Statement 6"] }
-];
+  <p>This chapter explores how God has gifted you through the Holy Spirit to serve others. Each section below includes six statements—please rate each one:</p>
+  <ul>
+    <li><strong>0</strong> = Not at all true</li>
+    <li><strong>1</strong> = Occasionally true</li>
+    <li><strong>2</strong> = Often true</li>
+    <li><strong>3</strong> = Very true</li>
+  </ul>
+<section><h2>Administration</h2>
+<label>I enjoy planning and organizing tasks to help a group achieve its goals.<input type="number" min="0" max="3" name="Administration_1"></label>
+<label>I can break down complex goals into manageable action steps.<input type="number" min="0" max="3" name="Administration_2"></label>
+<label>People often rely on me to coordinate projects or events.<input type="number" min="0" max="3" name="Administration_3"></label>
+<label>I create systems that make things run efficiently.<input type="number" min="0" max="3" name="Administration_4"></label>
+<label>I enjoy helping others stay on track through clear planning.<input type="number" min="0" max="3" name="Administration_5"></label>
+<label>I’m often asked to oversee details others may overlook.<input type="number" min="0" max="3" name="Administration_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Apostleship</h2>
+<label>I am energized by starting new churches or ministries.<input type="number" min="0" max="3" name="Apostleship_1"></label>
+<label>I often think about ways to reach new people or communities.<input type="number" min="0" max="3" name="Apostleship_2"></label>
+<label>I enjoy creating foundations others can build on.<input type="number" min="0" max="3" name="Apostleship_3"></label>
+<label>I have a strong desire to take the gospel to unreached areas.<input type="number" min="0" max="3" name="Apostleship_4"></label>
+<label>I see opportunities where others see obstacles.<input type="number" min="0" max="3" name="Apostleship_5"></label>
+<label>I enjoy mentoring new leaders in uncharted contexts.<input type="number" min="0" max="3" name="Apostleship_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Discernment</h2>
+<label>I can often sense when something is spiritually wrong or deceptive.<input type="number" min="0" max="3" name="Discernment_1"></label>
+<label>I trust my instincts about people’s motives and situations.<input type="number" min="0" max="3" name="Discernment_2"></label>
+<label>I recognize when a message or action aligns with God’s truth.<input type="number" min="0" max="3" name="Discernment_3"></label>
+<label>People ask me to pray or advise when they’re uncertain.<input type="number" min="0" max="3" name="Discernment_4"></label>
+<label>I feel prompted to speak out when I sense a lack of integrity.<input type="number" min="0" max="3" name="Discernment_5"></label>
+<label>I am sensitive to the presence of spiritual forces.<input type="number" min="0" max="3" name="Discernment_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Encouragement</h2>
+<label>I often help others feel hopeful during hard times.<input type="number" min="0" max="3" name="Encouragement_1"></label>
+<label>People say my words lift their spirits.<input type="number" min="0" max="3" name="Encouragement_2"></label>
+<label>I am drawn to support those who are discouraged.<input type="number" min="0" max="3" name="Encouragement_3"></label>
+<label>I enjoy reminding people of God’s promises and goodness.<input type="number" min="0" max="3" name="Encouragement_4"></label>
+<label>I regularly send messages to uplift or affirm someone.<input type="number" min="0" max="3" name="Encouragement_5"></label>
+<label>I like helping people see the best in themselves.<input type="number" min="0" max="3" name="Encouragement_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Evangelism</h2>
+<label>I’m quick to share my faith when opportunities arise.<input type="number" min="0" max="3" name="Evangelism_1"></label>
+<label>I naturally steer conversations toward spiritual topics.<input type="number" min="0" max="3" name="Evangelism_2"></label>
+<label>I have led someone to faith in Jesus.<input type="number" min="0" max="3" name="Evangelism_3"></label>
+<label>I enjoy explaining the gospel in simple, clear ways.<input type="number" min="0" max="3" name="Evangelism_4"></label>
+<label>People often listen when I talk about God’s love.<input type="number" min="0" max="3" name="Evangelism_5"></label>
+<label>I feel called to tell others about salvation.<input type="number" min="0" max="3" name="Evangelism_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Faith</h2>
+<label>I trust God even when others feel uncertain.<input type="number" min="0" max="3" name="Faith_1"></label>
+<label>I believe God can do the impossible.<input type="number" min="0" max="3" name="Faith_2"></label>
+<label>I’m not easily shaken when challenges arise.<input type="number" min="0" max="3" name="Faith_3"></label>
+<label>I pray boldly, believing God will act.<input type="number" min="0" max="3" name="Faith_4"></label>
+<label>I often encourage others to trust God more deeply.<input type="number" min="0" max="3" name="Faith_5"></label>
+<label>I feel peace knowing God will provide and guide.<input type="number" min="0" max="3" name="Faith_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Giving</h2>
+<label>I joyfully give money or resources to support God’s work.<input type="number" min="0" max="3" name="Giving_1"></label>
+<label>I look for ways to give even when it requires sacrifice.<input type="number" min="0" max="3" name="Giving_2"></label>
+<label>I believe generosity is a form of worship.<input type="number" min="0" max="3" name="Giving_3"></label>
+<label>I enjoy meeting others’ needs in practical ways.<input type="number" min="0" max="3" name="Giving_4"></label>
+<label>I budget to make space for intentional giving.<input type="number" min="0" max="3" name="Giving_5"></label>
+<label>I don’t seek recognition for what I give.<input type="number" min="0" max="3" name="Giving_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Healing</h2>
+<label>I have prayed for someone and seen them recover.<input type="number" min="0" max="3" name="Healing_1"></label>
+<label>I am drawn to pray for people who are physically or emotionally ill.<input type="number" min="0" max="3" name="Healing_2"></label>
+<label>I believe God wants to bring healing today.<input type="number" min="0" max="3" name="Healing_3"></label>
+<label>I’m often burdened to intercede for the sick.<input type="number" min="0" max="3" name="Healing_4"></label>
+<label>People come to me asking for healing prayer.<input type="number" min="0" max="3" name="Healing_5"></label>
+<label>I’ve seen or experienced God’s miraculous healing.<input type="number" min="0" max="3" name="Healing_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Helps</h2>
+<label>I find joy in serving behind the scenes.<input type="number" min="0" max="3" name="Helps_1"></label>
+<label>I often step in to assist without being asked.<input type="number" min="0" max="3" name="Helps_2"></label>
+<label>I don’t mind doing tasks others avoid.<input type="number" min="0" max="3" name="Helps_3"></label>
+<label>I enjoy freeing up others so they can lead or teach.<input type="number" min="0" max="3" name="Helps_4"></label>
+<label>I notice what needs to be done and do it.<input type="number" min="0" max="3" name="Helps_5"></label>
+<label>I prefer supporting roles over being in the spotlight.<input type="number" min="0" max="3" name="Helps_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Hospitality</h2>
+<label>I love welcoming people into my home or space.<input type="number" min="0" max="3" name="Hospitality_1"></label>
+<label>I enjoy creating a warm, inviting environment.<input type="number" min="0" max="3" name="Hospitality_2"></label>
+<label>People feel comfortable around me.<input type="number" min="0" max="3" name="Hospitality_3"></label>
+<label>I think about how to make strangers feel like family.<input type="number" min="0" max="3" name="Hospitality_4"></label>
+<label>I offer food, drink, or presence freely and joyfully.<input type="number" min="0" max="3" name="Hospitality_5"></label>
+<label>I host events or gatherings as a form of ministry.<input type="number" min="0" max="3" name="Hospitality_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Intercession</h2>
+<label>I frequently feel prompted to pray for others.<input type="number" min="0" max="3" name="Intercession_1"></label>
+<label>I believe prayer changes situations and hearts.<input type="number" min="0" max="3" name="Intercession_2"></label>
+<label>I pray persistently and consistently for specific needs.<input type="number" min="0" max="3" name="Intercession_3"></label>
+<label>I keep lists or journals of people I’m praying for.<input type="number" min="0" max="3" name="Intercession_4"></label>
+<label>People often ask me to pray because they know I will.<input type="number" min="0" max="3" name="Intercession_5"></label>
+<label>I feel spiritually burdened to pray even when unasked.<input type="number" min="0" max="3" name="Intercession_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Interpretation of Tongues</h2>
+<label>I have understood and interpreted messages in tongues.<input type="number" min="0" max="3" name="Interpretation of Tongues_1"></label>
+<label>I’ve sensed a clear message when someone spoke in a spiritual language.<input type="number" min="0" max="3" name="Interpretation of Tongues_2"></label>
+<label>I feel God gives me insight to clarify spiritual utterances.<input type="number" min="0" max="3" name="Interpretation of Tongues_3"></label>
+<label>My interpretations align with Scripture and edify others.<input type="number" min="0" max="3" name="Interpretation of Tongues_4"></label>
+<label>I test what I hear before sharing interpretation.<input type="number" min="0" max="3" name="Interpretation of Tongues_5"></label>
+<label>I feel prompted to pray for clarity when tongues are spoken.<input type="number" min="0" max="3" name="Interpretation of Tongues_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Knowledge</h2>
+<label>I enjoy studying and digging deep into Scripture or theology.<input type="number" min="0" max="3" name="Knowledge_1"></label>
+<label>I remember facts and apply them clearly.<input type="number" min="0" max="3" name="Knowledge_2"></label>
+<label>I connect ideas others may overlook.<input type="number" min="0" max="3" name="Knowledge_3"></label>
+<label>I pursue wisdom and understanding in spiritual matters.<input type="number" min="0" max="3" name="Knowledge_4"></label>
+<label>I enjoy researching biblical or theological truths.<input type="number" min="0" max="3" name="Knowledge_5"></label>
+<label>People come to me with difficult questions about faith.<input type="number" min="0" max="3" name="Knowledge_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Leadership</h2>
+<label>I enjoy motivating and directing people to achieve a goal.<input type="number" min="0" max="3" name="Leadership_1"></label>
+<label>Others follow my guidance in teams or projects.<input type="number" min="0" max="3" name="Leadership_2"></label>
+<label>I often see the big picture and help others take action.<input type="number" min="0" max="3" name="Leadership_3"></label>
+<label>I take initiative in unclear situations.<input type="number" min="0" max="3" name="Leadership_4"></label>
+<label>People seek my vision or direction when decisions are needed.<input type="number" min="0" max="3" name="Leadership_5"></label>
+<label>I feel responsible to lead when needed.<input type="number" min="0" max="3" name="Leadership_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Mercy</h2>
+<label>I am moved deeply by people who are hurting.<input type="number" min="0" max="3" name="Mercy_1"></label>
+<label>I feel called to walk with the broken and vulnerable.<input type="number" min="0" max="3" name="Mercy_2"></label>
+<label>People trust me with their pain.<input type="number" min="0" max="3" name="Mercy_3"></label>
+<label>I find it easy to forgive and show compassion.<input type="number" min="0" max="3" name="Mercy_4"></label>
+<label>I’m patient with people others may dismiss.<input type="number" min="0" max="3" name="Mercy_5"></label>
+<label>I prefer helping one person in depth rather than many at once.<input type="number" min="0" max="3" name="Mercy_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Miraculous Powers</h2>
+<label>I’ve prayed for and witnessed something miraculous.<input type="number" min="0" max="3" name="Miraculous Powers_1"></label>
+<label>I have sensed God prompt me to expect the extraordinary.<input type="number" min="0" max="3" name="Miraculous Powers_2"></label>
+<label>I believe in supernatural breakthroughs.<input type="number" min="0" max="3" name="Miraculous Powers_3"></label>
+<label>I share stories of God’s intervention to inspire faith.<input type="number" min="0" max="3" name="Miraculous Powers_4"></label>
+<label>I take bold steps trusting God will show up.<input type="number" min="0" max="3" name="Miraculous Powers_5"></label>
+<label>Others have confirmed God worked powerfully through me.<input type="number" min="0" max="3" name="Miraculous Powers_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Pastoring</h2>
+<label>I feel responsible for the spiritual wellbeing of others.<input type="number" min="0" max="3" name="Pastoring_1"></label>
+<label>I enjoy nurturing people in their growth over time.<input type="number" min="0" max="3" name="Pastoring_2"></label>
+<label>People come to me for care, prayer, or guidance.<input type="number" min="0" max="3" name="Pastoring_3"></label>
+<label>I keep track of who’s missing or struggling.<input type="number" min="0" max="3" name="Pastoring_4"></label>
+<label>I prefer building long-term relationships in ministry.<input type="number" min="0" max="3" name="Pastoring_5"></label>
+<label>I feel joy in walking closely with people in their faith.<input type="number" min="0" max="3" name="Pastoring_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Prophecy</h2>
+<label>I sense when God wants to speak a message through me.<input type="number" min="0" max="3" name="Prophecy_1"></label>
+<label>I boldly speak truth, even when it’s difficult.<input type="number" min="0" max="3" name="Prophecy_2"></label>
+<label>I feel prompted to challenge injustice or disobedience.<input type="number" min="0" max="3" name="Prophecy_3"></label>
+<label>Others have confirmed a word I’ve shared was from God.<input type="number" min="0" max="3" name="Prophecy_4"></label>
+<label>I ask God to help me discern His voice clearly.<input type="number" min="0" max="3" name="Prophecy_5"></label>
+<label>I share what I sense in humility and love.<input type="number" min="0" max="3" name="Prophecy_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Service</h2>
+<label>I enjoy doing practical tasks to support others.<input type="number" min="0" max="3" name="Service_1"></label>
+<label>I volunteer to help without needing recognition.<input type="number" min="0" max="3" name="Service_2"></label>
+<label>I meet needs others overlook.<input type="number" min="0" max="3" name="Service_3"></label>
+<label>I feel fulfilled when others are helped by my work.<input type="number" min="0" max="3" name="Service_4"></label>
+<label>I prefer action to words in showing love.<input type="number" min="0" max="3" name="Service_5"></label>
+<label>I step in to serve when there’s a gap or need.<input type="number" min="0" max="3" name="Service_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Teaching</h2>
+<label>I enjoy explaining spiritual truths clearly.<input type="number" min="0" max="3" name="Teaching_1"></label>
+<label>I prepare thoroughly when I’m going to teach.<input type="number" min="0" max="3" name="Teaching_2"></label>
+<label>People say I help them understand the Bible better.<input type="number" min="0" max="3" name="Teaching_3"></label>
+<label>I organize information in a way that makes sense to others.<input type="number" min="0" max="3" name="Teaching_4"></label>
+<label>I’m excited to learn and then share what I’ve learned.<input type="number" min="0" max="3" name="Teaching_5"></label>
+<label>I use examples or stories to clarify complex ideas.<input type="number" min="0" max="3" name="Teaching_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Tongues</h2>
+<label>I speak or pray in a language I’ve never learned.<input type="number" min="0" max="3" name="Tongues_1"></label>
+<label>I feel close to God when I use this gift in prayer.<input type="number" min="0" max="3" name="Tongues_2"></label>
+<label>I’ve experienced spiritual encouragement through tongues.<input type="number" min="0" max="3" name="Tongues_3"></label>
+<label>I believe God gives tongues as a form of personal or public praise.<input type="number" min="0" max="3" name="Tongues_4"></label>
+<label>I use this gift mostly in private settings.<input type="number" min="0" max="3" name="Tongues_5"></label>
+<label>Others have affirmed the authenticity of my spiritual language.<input type="number" min="0" max="3" name="Tongues_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Voluntary Poverty</h2>
+<label>I choose to live simply to give more to others.<input type="number" min="0" max="3" name="Voluntary Poverty_1"></label>
+<label>I give up comfort or wealth to support mission or justice.<input type="number" min="0" max="3" name="Voluntary Poverty_2"></label>
+<label>I feel called to serve among the poor or marginalised.<input type="number" min="0" max="3" name="Voluntary Poverty_3"></label>
+<label>I believe less is more when it comes to possessions.<input type="number" min="0" max="3" name="Voluntary Poverty_4"></label>
+<label>I don’t seek material success or recognition.<input type="number" min="0" max="3" name="Voluntary Poverty_5"></label>
+<label>I prefer to invest in people, not things.<input type="number" min="0" max="3" name="Voluntary Poverty_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
+<section><h2>Wisdom</h2>
+<label>People come to me for advice in difficult decisions.<input type="number" min="0" max="3" name="Wisdom_1"></label>
+<label>I help others see the bigger picture through a biblical lens.<input type="number" min="0" max="3" name="Wisdom_2"></label>
+<label>I often discern the wise way forward in unclear situations.<input type="number" min="0" max="3" name="Wisdom_3"></label>
+<label>I connect Scripture to life in practical ways.<input type="number" min="0" max="3" name="Wisdom_4"></label>
+<label>I pray for wisdom regularly and sense God answers.<input type="number" min="0" max="3" name="Wisdom_5"></label>
+<label>I apply biblical truth with compassion and clarity.<input type="number" min="0" max="3" name="Wisdom_6"></label>
+<p><strong>Total score:</strong> ______</p>
+</section>
 
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('assessment');
-  gifts.forEach((gift, idx) => {
-    const section = document.createElement('section');
-    section.innerHTML = `<h3>${gift.name}</h3>`;
-    gift.statements.forEach((text, i) => {
-      section.innerHTML += `<label>${text} <input type="number" min="0" max="3" value="0" data-gift="${idx}"></label><br>`;
-    });
-    section.innerHTML += `<strong>Total: </strong><span id="total-${idx}">0</span>`;
-    container.appendChild(section);
-  });
+<h2>Reflection Journal</h2>
+<label>Which gifts scored highest? What do they reveal about how God made you?<br><textarea></textarea></label>
+<label>Which gifts surprised you, and why?<br><textarea></textarea></label>
+<label>How could you use these gifts in your current life, ministry, or community?<br><textarea></textarea></label>
 
-  document.querySelectorAll('input[type="number"]').forEach(input => {
-    input.addEventListener('input', () => {
-      const giftId = input.dataset.gift;
-      const inputs = document.querySelectorAll(`input[data-gift='${giftId}']`);
-      const sum = [...inputs].reduce((acc, el) => acc + Number(el.value || 0), 0);
-      document.getElementById(`total-${giftId}`).textContent = sum;
-    });
-  });
-});
-</script>
-
+<h2>Closing Prayer</h2>
+<blockquote>
+  Spirit of God,<br>
+  Thank you for your gifts, freely given for the good of all.<br>
+  Help me discover and use mine with joy and humility.<br>
+  Build up your Church through our diversity,<br>
+  And lead me to serve faithfully with what you’ve entrusted to me.<br>
+  Amen.
+</blockquote>
 </body>
 </html>
