@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Breathe</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Breathe
+  </title>
   <style>
-    body { font-family: sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+   body { font-family: sans-serif; margin: 0; background: #f5f5f5; color: #333; }
     .tab-button {
       flex: 1 1 120px;
       max-width: 150px;
@@ -59,7 +61,7 @@
     }
   </style>
   <script>
-    function showTab(tabId) {
+   function showTab(tabId) {
       const contents = document.querySelectorAll('.tab-content');
       const buttons = document.querySelectorAll('.tab-button');
       contents.forEach(content => content.classList.remove('active'));
@@ -83,74 +85,248 @@
       });
     };
   </script>
-</head>
-<body>
+ </head>
+ <body>
   <header>
-    <h1 style="text-align: center;">Breathe: a place to let go for a moment and hold on to God</h1>
-    <nav>
-      <button class="tab-button active" onclick="showTab('home')">Home</button>
-      <button class="tab-button" onclick="showTab('courses')">Courses</button>
-      <a href="examen.html" target="_blank" class="tab-button" style="text-decoration: none;">Examen</a>
-      <button class="tab-button" onclick="showTab('notes')">My Notes</button>
-      <button class="tab-button" onclick="showTab('saved')">My Saved Moments</button>
-      <button class="tab-button" onclick="showTab('pennine')">Pennine Way</button>
-    </nav>
+   <h1 style="text-align: center;">
+    Breathe: a place to let go for a moment and hold on to God
+   </h1>
+   <nav>
+    <button class="tab-button active" onclick="showTab('home')">
+     Home
+    </button>
+    <button class="tab-button" onclick="showTab('courses')">
+     Courses
+    </button>
+    <a class="tab-button" href="examen.html" style="text-decoration: none;" target="_blank">
+     Examen
+    </a>
+    <button class="tab-button" onclick="showTab('notes')">
+     My Notes
+    </button>
+    <button class="tab-button" onclick="showTab('saved')">
+     My Saved Moments
+    </button>
+    <button class="tab-button" onclick="showTab('pennine')">
+     Pennine Way
+    </button>
+   </nav>
   </header>
-
   <main>
-    <div class="tab-content active" id="home">
-      <section>
-        <h2>A Moment of Release</h2>
-        <p>A time where we can put things down for a moment<br/>
-           Where we can breathe for a moment<br/>
-           Where we can lay aside the expectations of others for a moment<br/>
-           Where we can lay aside our responsibility for others for a moment<br/>
-           Where we are not being judged or assessed<br/>
-           Putting down the things we carry – might be tangible or intangible</p>
-      </section>
-      <section>
-        <h2>Opening Meditative Song</h2>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ" allowfullscreen></iframe>
-      </section>
-    </div>
-
-    <div class="tab-content" id="courses">
-      <section>
-        <h2>Courses</h2>
-        <p>Explore our two course offerings:</p>
-        <ul style="list-style: disc; padding-left: 1.5em;">
-          <li><a href="prayer.html" target="_blank">Prayer Course</a> – A journey through different types of prayer and how to grow a prayerful life.</li>
-          <li><a href="shape.html" target="_blank">SHAPE Course</a> – Discover your unique gifts and how to use them in faith and service.</li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="tab-content" id="notes">
-      <section>
-        <h2>My Spiritual Notes</h2>
-        <p>Write freely. Your notes are saved only in your browser and never leave your device.</p>
-        <textarea id="notesArea" placeholder="What are you noticing this week? What are you praying for?"></textarea>
-        <button class="button-clear" onclick="clearNotes()">Clear Notes</button>
-      </section>
-    </div>
-
-    <div class="tab-content" id="saved">
-      <section>
-        <h2>My Saved Moments</h2>
-        <p>No saved moments yet.</p>
-      </section>
-    </div>
-
-    <div class="tab-content" id="pennine">
-      <section>
-        <h2>Walking the Pennine Way</h2>
-        <p>This section will gather reflections, prayers, and moments of insight from my sabbatical walk along the Pennine Way. Each day’s journey becomes a space for spiritual noticing — in the landscape, in the conversations, and in the silences.</p>
-      </section>
-    </div>
+   <div class="tab-content active" id="home">
+    <section>
+     <h2>
+      A Moment of Release
+     </h2>
+     <p>
+      A time where we can put things down for a moment
+      <br/>
+      Where we can breathe for a moment
+      <br/>
+      Where we can lay aside the expectations of others for a moment
+      <br/>
+      Where we can lay aside our responsibility for others for a moment
+      <br/>
+      Where we are not being judged or assessed
+      <br/>
+      Putting down the things we carry – might be tangible or intangible
+     </p>
+    </section>
+    <section>
+     <h2>
+      Opening Meditative Song
+     </h2>
+     <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ" width="100%">
+     </iframe>
+    </section>
+    <section>
+     <h2>
+      A Moment of Release
+     </h2>
+     <p>
+      A time where we can put things down for a moment
+      <br/>
+      Where we can breathe for a moment
+      <br/>
+      Where we can lay aside the expectations of others for a moment
+      <br/>
+      Where we can lay aside our responsibility for others for a moment
+      <br/>
+      Where we are not being judged or assessed
+      <br/>
+      Putting down the things we carry – might be tangible or intangible
+     </p>
+    </section>
+    <section>
+     <h2>
+      Opening Meditative Song
+     </h2>
+     <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ">
+     </iframe>
+    </section>
+    <section>
+     <h2>
+      Prayer for the Week
+      <span class="bookmark" onclick="saveMoment('Prayer for the Week', this.closest('section').outerHTML)">
+       ⭐ Save
+      </span>
+     </h2>
+     <p>
+      Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.
+     </p>
+    </section>
+    <section>
+     <h2>
+      Reading for the Week
+      <span class="bookmark" onclick="saveMoment('Reading for the Week', this.closest('section').outerHTML)">
+       ⭐ Save
+      </span>
+     </h2>
+     <p>
+      <strong>
+       Matthew 11:28–30 (The Message)
+      </strong>
+     </p>
+     <p>
+      "Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."
+     </p>
+     <p>
+      <strong>
+       Reflection:
+      </strong>
+      Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus doesn’t offer a shortcut out, but a different way to carry what we hold—with him. This isn’t about doing more or trying harder. It’s about trusting the One who invites us to walk and rest in rhythm with grace.
+     </p>
+     <p>
+      <em>
+       What burden might you put down this week, and how might you let grace reshape your pace?
+      </em>
+     </p>
+    </section>
+    <section>
+     <h2>
+      Spiritual Exercise
+      <span class="bookmark" onclick="saveMoment('Spiritual Exercise', this.closest('section').outerHTML)">
+       ⭐ Save
+      </span>
+     </h2>
+     <p>
+      This week, pause each morning to take three deep breaths. As you breathe in, say quietly: "Here I am." As you breathe out: "With you, God." Let this rhythm anchor your day in awareness of God's presence.
+     </p>
+    </section>
+    <section>
+     <h2>
+      Reading for the Week
+      <span class="bookmark" onclick="saveMoment('Reading for the Week', this.closest('section').outerHTML)">
+       ⭐ Save
+      </span>
+     </h2>
+     <p>
+      <strong>
+       Matthew 11:28–30 (The Message)
+      </strong>
+     </p>
+     <p>
+      "Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."
+     </p>
+     <p>
+      <strong>
+       Reflection:
+      </strong>
+      Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus doesn’t offer a shortcut out, but a different way to carry what we hold—with him. This isn’t about doing more or trying harder. It’s about trusting the One who invites us to walk and rest in rhythm with grace.
+     </p>
+     <p>
+      <em>
+       What burden might you put down this week, and how might you let grace reshape your pace?
+      </em>
+     </p>
+    </section>
+    <section>
+     <h2>
+      St Aidan Prayer
+     </h2>
+     <div class="st-aidan">
+      <img alt="Statue of St Aidan" src="saint-aiden-lindisfarne.webp"/>
+      <p>
+       Leave me alone with God as much as may be.
+       <br/>
+       As the tide draws the waters close in upon the shore,
+       <br/>
+       Make me an island, set apart,
+       <br/>
+       alone with you, God, holy to you.
+       <br/>
+       Then with the turning of the tide
+       <br/>
+       prepare me to carry your presence to the busy world beyond,
+       <br/>
+       the world that rushes in on me
+       <br/>
+       till the waters come again and fold me back to you.
+      </p>
+     </div>
+    </section>
+   </div>
+   <div class="tab-content" id="courses">
+    <section>
+     <h2>
+      Courses
+     </h2>
+     <p>
+      Explore our two course offerings:
+     </p>
+     <ul style="list-style: disc; padding-left: 1.5em;">
+      <li>
+       <a href="prayer.html" target="_blank">
+        Prayer Course
+       </a>
+       – A journey through different types of prayer and how to grow a prayerful life.
+      </li>
+      <li>
+       <a href="shape.html" target="_blank">
+        SHAPE Course
+       </a>
+       – Discover your unique gifts and how to use them in faith and service.
+      </li>
+     </ul>
+    </section>
+   </div>
+   <div class="tab-content" id="notes">
+    <section>
+     <h2>
+      My Spiritual Notes
+     </h2>
+     <p>
+      Write freely. Your notes are saved only in your browser and never leave your device.
+     </p>
+     <textarea id="notesArea" placeholder="What are you noticing this week? What are you praying for?"></textarea>
+     <button class="button-clear" onclick="clearNotes()">
+      Clear Notes
+     </button>
+    </section>
+   </div>
+   <div class="tab-content" id="saved">
+    <section>
+     <h2>
+      My Saved Moments
+     </h2>
+     <p>
+      No saved moments yet.
+     </p>
+    </section>
+   </div>
+   <div class="tab-content" id="pennine">
+    <section>
+     <h2>
+      Walking the Pennine Way
+     </h2>
+     <p>
+      This section will gather reflections, prayers, and moments of insight from my sabbatical walk along the Pennine Way. Each day’s journey becomes a space for spiritual noticing — in the landscape, in the conversations, and in the silences.
+     </p>
+    </section>
+   </div>
   </main>
-
   <footer style="text-align: center; margin: 2em 0;">
-    © 2025 Sawston Free Church | Built with grace and simplicity
+   © 2025 Sawston Free Church | Built with grace and simplicity
   </footer>
-</body>
+ </body>
 </html>
