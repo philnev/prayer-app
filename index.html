@@ -1,9 +1,11 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Breathe</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Breathe</title>
+<style>
     body { font-family: sans-serif; margin: 0; background: #f5f5f5; color: #333; }
     header { background: #4267b2; color: white; padding: 1em; text-align: center; position: relative; }
     header h1 { margin: 0 0 0.5em 0; }
@@ -25,19 +27,17 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Breathe: a place to let go for a moment and hold on to God</h1>
-    <nav>
-      <button class="tab-button active" onclick="showTab('home')">Home</button>
-      
+<header>
+<h1>Breathe: a place to let go for a moment and hold on to God</h1>
+<nav>
+<button class="tab-button active" onclick="showTab('home')">Home</button>
 <div class="dropdown">
-  <button class="tab-button">Courses ▾</button>
-  <div class="dropdown-content">
-    <a href="prayer.html" target="_blank">Prayer Course</a>
-    <a href="shape.html" target="_blank">SHAPE Course</a>
-  </div>
+<button class="tab-button">Courses ▾</button>
+<div class="dropdown-content">
+<a href="prayer.html" target="_blank">Prayer Course</a>
+<a href="shape.html" target="_blank">SHAPE Course</a>
 </div>
-
+</div>
 <style>
   .dropdown {
     position: relative;
@@ -65,146 +65,103 @@
     background-color: #f0f0f0;
   }
 </style>
-
-      <button class="tab-button" onclick="showTab('exercises')">Exercises</button>
-      <button class="tab-button" onclick="showTab('prayers')">Prayers</button>
-      <button class="tab-button" onclick="showTab('notes')">My Notes</button>
-      <button class="tab-button" onclick="showTab('saved')">My Saved Moments</button>
-    </nav>
-  </header>
-
-  <main>
-    <div id="home" class="tab-content active">
-      <section>
-        <h2>A Moment of Release</h2>
-        <p>A time where we can put things down for a moment<br>
-        Where we can breathe for a moment<br>
-        Where we can lay aside the expectations of others for a moment<br>
-        Where we can lay aside our responsibility for others for a moment<br>
-        Where we are not being judged or assessed<br>
+<button class="tab-button" onclick="showTab('notes')">My Notes</button>
+<button class="tab-button" onclick="showTab('saved')">My Saved Moments</button>
+</nav>
+</header>
+<main>
+<div class="tab-content active" id="home">
+<section>
+<h2>A Moment of Release</h2>
+<p>A time where we can put things down for a moment<br/>
+        Where we can breathe for a moment<br/>
+        Where we can lay aside the expectations of others for a moment<br/>
+        Where we can lay aside our responsibility for others for a moment<br/>
+        Where we are not being judged or assessed<br/>
         Putting down the things we carry – might be tangible or intangible</p>
-      </section>
-
-      <section>
-        <h2>Opening Meditative Song</h2>
-        <iframe height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ" allowfullscreen></iframe>
-      </section>
-
-      <section>
-        <h2>Prayer for the Week <span class="bookmark" onclick="saveMoment('Prayer for the Week', this.closest('section').outerHTML)">⭐ Save</span></h2>
-        <p>Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.</p>
-      </section>
-
-      <section>
-        <h2>Reading for the Week <span class="bookmark" onclick="saveMoment('Reading for the Week', this.closest('section').outerHTML)">⭐ Save</span></h2>
-        <p><strong>Matthew 11:28–30 (The Message)</strong></p>
-        <p>"Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."</p>
-        <p><strong>Reflection:</strong> Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus doesn’t offer a shortcut out, but a different way to carry what we hold—with him. This isn’t about doing more or trying harder. It’s about trusting the One who invites us to walk and rest in rhythm with grace.</p>
-        <p><em>What burden might you put down this week, and how might you let grace reshape your pace?</em></p></section>
-
-      <section>
-        <h2>Spiritual Exercise <span class="bookmark" onclick="saveMoment('Spiritual Exercise', this.closest('section').outerHTML)">⭐ Save</span></h2>
-        <p>This week, pause each morning to take three deep breaths. As you breathe in, say quietly: "Here I am." As you breathe out: "With you, God." Let this rhythm anchor your day in awareness of God's presence.</p>
-      </section>
-
-      
-
-      <section>
-        <h2>Reading for the Week <span class="bookmark" onclick="saveMoment('Reading for the Week', this.closest('section').outerHTML)">⭐ Save</span></h2>
-        <p><strong>Matthew 11:28–30 (The Message)</strong></p>
-        <p>"Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."</p>
-        <p><strong>Reflection:</strong> Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus doesn’t offer a shortcut out, but a different way to carry what we hold—with him. This isn’t about doing more or trying harder. It’s about trusting the One who invites us to walk and rest in rhythm with grace.</p>
-        <p><em>What burden might you put down this week, and how might you let grace reshape your pace?</em></p>
-      </section>
-
-    
-
-      <section>
-        <h2>St Aidan Prayer</h2>
-        <div class="st-aidan">
-          <img src="saint-aiden-lindisfarne.webp" alt="Statue of St Aidan">
-          <p>Leave me alone with God as much as may be.<br>
-          As the tide draws the waters close in upon the shore,<br>
-          Make me an island, set apart,<br>
-          alone with you, God, holy to you.<br>
-          Then with the turning of the tide<br>
-          prepare me to carry your presence to the busy world beyond,<br>
-          the world that rushes in on me<br>
+</section>
+<section>
+<h2>Opening Meditative Song</h2>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ"></iframe>
+</section>
+<section>
+<h2>Prayer for the Week <span class="bookmark" onclick="saveMoment('Prayer for the Week', this.closest('section').outerHTML)">⭐ Save</span></h2>
+<p>Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.</p>
+</section>
+<section>
+<h2>Reading for the Week <span class="bookmark" onclick="saveMoment('Reading for the Week', this.closest('section').outerHTML)">⭐ Save</span></h2>
+<p><strong>Matthew 11:28–30 (The Message)</strong></p>
+<p>"Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."</p>
+<p><strong>Reflection:</strong> Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus doesn’t offer a shortcut out, but a different way to carry what we hold—with him. This isn’t about doing more or trying harder. It’s about trusting the One who invites us to walk and rest in rhythm with grace.</p>
+<p><em>What burden might you put down this week, and how might you let grace reshape your pace?</em></p></section>
+<section>
+<h2>Spiritual Exercise <span class="bookmark" onclick="saveMoment('Spiritual Exercise', this.closest('section').outerHTML)">⭐ Save</span></h2>
+<p>This week, pause each morning to take three deep breaths. As you breathe in, say quietly: "Here I am." As you breathe out: "With you, God." Let this rhythm anchor your day in awareness of God's presence.</p>
+</section>
+<section>
+<h2>Reading for the Week <span class="bookmark" onclick="saveMoment('Reading for the Week', this.closest('section').outerHTML)">⭐ Save</span></h2>
+<p><strong>Matthew 11:28–30 (The Message)</strong></p>
+<p>"Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."</p>
+<p><strong>Reflection:</strong> Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus doesn’t offer a shortcut out, but a different way to carry what we hold—with him. This isn’t about doing more or trying harder. It’s about trusting the One who invites us to walk and rest in rhythm with grace.</p>
+<p><em>What burden might you put down this week, and how might you let grace reshape your pace?</em></p>
+</section>
+<section>
+<h2>St Aidan Prayer</h2>
+<div class="st-aidan">
+<img alt="Statue of St Aidan" src="https://upload.wikimedia.org/wikipedia/commons/7/79/Statue_of_St_Aidan%2C_Lindisfarne.JPG"/>
+<p>Leave me alone with God as much as may be.<br/>
+          As the tide draws the waters close in upon the shore,<br/>
+          Make me an island, set apart,<br/>
+          alone with you, God, holy to you.<br/>
+          Then with the turning of the tide<br/>
+          prepare me to carry your presence to the busy world beyond,<br/>
+          the world that rushes in on me<br/>
           till the waters come again and fold me back to you.</p>
-        </div>
-      </section>
-    </div>
-
-    <div id="courses" class="tab-content">
-      <section>
-        <h2>The Prayer Course</h2>
-        <p>Explore eight sessions on different aspects of prayer. Each session includes a video to watch in your own time.</p>
-        <h3>Session 1: Why Pray?</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/1aHA1yj8E2g" allowfullscreen></iframe>
-        <h3>Session 2: Adoration</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/boklkec7NLE" allowfullscreen></iframe>
-        <h3>Session 3: Petition</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/qSRIuPF32jQ" allowfullscreen></iframe>
-        <h3>Session 4: Intercession</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/GuU2cZ5uCfA" allowfullscreen></iframe>
-        <h3>Session 5: Unanswered Prayer</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/QjrZ6wCS2eM" allowfullscreen></iframe>
-        <h3>Session 6: Contemplation</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/9ckvmhz_6FQ" allowfullscreen></iframe>
-        <h3>Session 7: Listening</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/1aHA1yj8E2g" allowfullscreen></iframe>
-        <h3>Session 8: Spiritual Warfare</h3>
-        <iframe height="315" src="https://www.youtube.com/embed/56cBISAcTk8" allowfullscreen></iframe>
-      </section>
-    </div>
-
-    <div id="exercises" class="tab-content">
-      <section>
-        <h2>Archive of Weekly Spiritual Exercises</h2>
-        <ul>
-          <li><strong>Week 1:</strong> Take a short walk and name things you're thankful for.</li>
-          <li><strong>Week 2:</strong> Pause three times a day to say: "Here I am. With you, God."</li>
-          <li><strong>Week 3:</strong> Write a prayer of thanks before bed each night.</li>
-          <li><strong>Week 4:</strong> Light a candle and sit in silence for 5 minutes each day.</li>
-        </ul>
-      </section>
-    </div>
-
-    <div id="prayers" class="tab-content">
-      <section>
-        <h2>Archive of Weekly Prayers</h2>
-        <ul>
-          <li><strong>Week 1:</strong> God of peace, calm our racing thoughts and hold us in your care.</li>
-          <li><strong>Week 2:</strong> Creator God, thank you for the beauty around us. Help us notice it today.</li>
-          <li><strong>Week 3:</strong> Jesus, walk with us in our joys and our doubts. Stay near.</li>
-          <li><strong>Week 4:</strong> Spirit of life, breathe hope and courage into our tired hearts.</li>
-        </ul>
-      </section>
-    </div>
-
-    <div id="notes" class="tab-content">
-      <section>
-        <h2>My Spiritual Notes</h2>
-        <p>Write freely. Your notes are saved only in your browser and never leave your device.</p>
-        <textarea id="notesArea" placeholder="What are you noticing this week? What are you praying for?"></textarea>
-        <button class="button-clear" onclick="clearNotes()">Clear Notes</button>
-      </section>
-    </div>
-
-    <div id="saved" class="tab-content">
-      <section>
-        <h2>My Saved Moments</h2>
-        <div id="savedContent"><em>No moments saved yet.</em></div>
-        <button class="button-clear" onclick="clearSavedMoments()">Clear Saved Moments</button>
-      </section>
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 Sawston Free Church | Built with grace and simplicity
+</div>
+</section>
+</div>
+<div class="tab-content" id="courses">
+<section>
+<h2>The Prayer Course</h2>
+<p>Explore eight sessions on different aspects of prayer. Each session includes a video to watch in your own time.</p>
+<h3>Session 1: Why Pray?</h3>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/1aHA1yj8E2g"></iframe>
+<h3>Session 2: Adoration</h3>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/boklkec7NLE"></iframe>
+<h3>Session 3: Petition</h3>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/qSRIuPF32jQ"></iframe>
+<h3>Session 4: Intercession</h3>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/GuU2cZ5uCfA"></iframe>
+<h3>Session 5: Unanswered Prayer</h3>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/QjrZ6wCS2eM"></iframe>
+<h3>Session 6: Contemplation</h3>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/9ckvmhz_6FQ"></iframe>
+<h3>Session 7: Listening</h3>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/1aHA1yj8E2g"></iframe>
+<h3>Session 8: Spiritual Warfare</h3>
+<iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/56cBISAcTk8"></iframe>
+</section>
+</div>
+<div class="tab-content" id="notes">
+<section>
+<h2>My Spiritual Notes</h2>
+<p>Write freely. Your notes are saved only in your browser and never leave your device.</p>
+<textarea id="notesArea" placeholder="What are you noticing this week? What are you praying for?"></textarea>
+<button class="button-clear" onclick="clearNotes()">Clear Notes</button>
+</section>
+</div>
+<div class="tab-content" id="saved">
+<section>
+<h2>My Saved Moments</h2>
+<div id="savedContent"><em>No moments saved yet.</em></div>
+<button class="button-clear" onclick="clearSavedMoments()">Clear Saved Moments</button>
+</section>
+</div>
+</main>
+<footer>
+    © 2025 Sawston Free Church | Built with grace and simplicity
   </footer>
-
-  <script>
+<script>
     function showTab(tabId) {
       const contents = document.querySelectorAll('.tab-content');
       const buttons = document.querySelectorAll('.tab-button');
@@ -251,6 +208,3 @@
   </script>
 </body>
 </html>
-
-
-
