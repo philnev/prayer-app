@@ -7,6 +7,31 @@
    Breathe
   </title>
   <style>
+
+    .bookmark {
+    .bookmark:hover {
+      color: #4267b2;
+      transform: scale(1.1);
+    }
+
+      cursor: pointer;
+      font-size: 0.9em;
+      color: #888;
+      margin-left: 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .bookmark.clicked {
+      color: #4267b2;
+      transform: scale(1.2);
+    }
+    .saved-item {
+      margin-bottom: 1em;
+      border-left: 4px solid #4267b2;
+      padding-left: 1em;
+      background: #f0f4ff;
+      border-radius: 4px;
+    }
+
    body { font-family: sans-serif; margin: 0; background: #f5f5f5; color: #333; }
     .tab-button {
       flex: 1 1 120px;
@@ -84,6 +109,36 @@
         localStorage.setItem('spiritualNotes', e.target.value);
       });
     };
+  
+    
+    function saveMoment(title, content) {
+      let moments = JSON.parse(localStorage.getItem('savedMoments') || '[]');
+      moments.push({ title, content });
+      localStorage.setItem('savedMoments', JSON.stringify(moments));
+      alert('Saved!');
+      updateSavedMoments();
+    }
+
+    function updateSavedMoments() {
+      const container = document.querySelector('#saved .tab-content, #saved section');
+      if (!container) return;
+      const savedData = JSON.parse(localStorage.getItem('savedMoments') || '[]');
+      container.innerHTML = '<h2>My Saved Moments</h2>';
+      if (savedData.length === 0) {
+        container.innerHTML += '<p>No saved moments yet.</p>';
+      } else {
+        savedData.forEach(item => {
+          const div = document.createElement('div');
+          div.innerHTML = `<h3>${item.title}</h3>` + item.content;
+          container.appendChild(div);
+        });
+      }
+    }
+
+    window.addEventListener('load', () => {
+      updateSavedMoments();
+    });
+
   </script>
  </head>
  <body>
@@ -139,7 +194,31 @@
      <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ" width="100%">
      </iframe>
     </section>
-    
+    <section>
+     <h2>
+      A Moment of Release
+     </h2>
+     <p>
+      A time where we can put things down for a moment
+      <br/>
+      Where we can breathe for a moment
+      <br/>
+      Where we can lay aside the expectations of others for a moment
+      <br/>
+      Where we can lay aside our responsibility for others for a moment
+      <br/>
+      Where we are not being judged or assessed
+      <br/>
+      Putting down the things we carry – might be tangible or intangible
+     </p>
+    </section>
+    <section>
+     <h2>
+      Opening Meditative Song
+     </h2>
+     <iframe allowfullscreen="" height="315" src="https://www.youtube.com/embed/0ZvwTVTlByQ">
+     </iframe>
+    </section>
     <section>
      <h2>
       Prayer for the Week
@@ -151,7 +230,33 @@
       Holy God, in the stillness of this moment, meet us. Let your peace breathe through our week, your love shape our interactions, and your Spirit guide our steps. Amen.
      </p>
     </section>
-    
+    <section>
+     <h2>
+      Reading for the Week
+      <span class="bookmark" onclick="saveMoment('Reading for the Week', this.closest('section').outerHTML)">
+       ⭐ Save
+      </span>
+     </h2>
+     <p>
+      <strong>
+       Matthew 11:28–30 (The Message)
+      </strong>
+     </p>
+     <p>
+      "Are you tired? Worn out? Burned out on religion? Come to me. Get away with me and you’ll recover your life. I’ll show you how to take a real rest. Walk with me and work with me—watch how I do it. Learn the unforced rhythms of grace. I won’t lay anything heavy or ill-fitting on you. Keep company with me and you’ll learn to live freely and lightly."
+     </p>
+     <p>
+      <strong>
+       Reflection:
+      </strong>
+      Sometimes the weariness we carry is deeper than our bodies—it’s soul-deep. Jesus doesn’t offer a shortcut out, but a different way to carry what we hold—with him. This isn’t about doing more or trying harder. It’s about trusting the One who invites us to walk and rest in rhythm with grace.
+     </p>
+     <p>
+      <em>
+       What burden might you put down this week, and how might you let grace reshape your pace?
+      </em>
+     </p>
+    </section>
     <section>
      <h2>
       Spiritual Exercise
